@@ -1,0 +1,28 @@
+<template>
+
+
+    <lightning-card title="The address details" icon-name="standard:address">
+
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+        <tr><td></td><td><strong></strong>Before.</strong></td><td><strong></strong>After</strong></td></tr>
+        <tr><td><strong></strong>Street</strong></td><td>{beforeBillingStreet}</td><td style="background-color: #C6EFCE; color: #006100;">{afterBillingStreet}</td></tr>
+        <tr><td><strong></strong>City</strong></td><td>{beforeBillingCity}</td><td style="background-color: #C6EFCE; color: #006100;">{afterBillingCity}</td></tr>
+        <tr><td><strong></strong>Postal Code</strong></td><td>{beforeBillingPostalCode}</td><td style="background-color: #C6EFCE; color: #006100;">{afterBillingPostalCode}</td></tr>
+        <tr><td><strong></strong>Country</strong></td><td>{beforeBillingCountry}</td><td style="background-color: #C6EFCE; color: #006100;">{afterBillingCountry}</td></tr>
+        <tr><td><strong></strong>Lat</strong></td><td>{beforeBillingLatitude}</td><td style="background-color: #C6EFCE; color: #006100;">{afterBillingLatitude}</td></tr>
+        <tr><td><strong></strong>Lon</strong></td><td>{beforeBillingLongitude}</td><td style="background-color: #C6EFCE; color: #006100;">{afterBillingLongitude}</td></tr>
+        </table>
+        <div class="slds-m-top_xx-small slds-m-left_xx-small">
+            <lightning-button label="More" onclick={showRAWResponse}> </lightning-button>
+            <template if:true = {divRAWResponseflag}>  
+            <div class="slds-m-top_xx-small">
+                <div id="divRAWResponse" class="slds-box">  
+                    {RAWResponse}  
+                </div>  
+                </div>
+            </template>
+        </div>
+
+    </lightning-card>
+   
+</template>

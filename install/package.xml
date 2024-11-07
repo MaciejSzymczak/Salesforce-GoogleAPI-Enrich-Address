@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Enrich</members>
+    <members>EnrichTest</members>
+    <name>ApexClass</name>
+  </types>
+  <types>
+    <members>Account</members>
+    <name>CustomObject</name>
+  </types>
+  <types>
+    <members>Account_Enrich</members>
+    <name>Flow</name>
+  </types>
+  <types>
+    <members>enrichTestResponse</members>
+    <name>StaticResource</name>
+  </types>
+  <types>
+    <members>enrichAddressComparision</members>
+    <name>LightningComponentBundle</name>
+  </types>
+ 
+  <version>55.0</version>
+</Package>
